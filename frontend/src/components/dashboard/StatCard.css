@@ -1,0 +1,83 @@
+.stat-card {
+  --tone: #64748b;
+  --tone-strong: var(--text-strong);
+
+  padding: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color 0.2s;
+}
+
+.stat-card:hover {
+  border-color: color-mix(in srgb, var(--tone) 40%, transparent);
+}
+
+.stat-card--sky {
+  --tone: #0ea5e9;
+  --tone-strong: var(--sky-soft);
+}
+
+.stat-card--amber {
+  --tone: #f59e0b;
+  --tone-strong: var(--accent-soft);
+}
+
+.stat-card--emerald {
+  --tone: #10b981;
+  --tone-strong: var(--emerald-soft);
+}
+
+.stat-card__top,
+.stat-card__middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card__top {
+  align-items: center;
+}
+
+.stat-card__label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.stat-card__icon {
+  color: var(--tone);
+}
+
+.stat-card__middle {
+  align-items: baseline;
+  margin-top: 12px;
+}
+
+.stat-card__value {
+  font-family: var(--font-serif);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--tone-strong);
+}
+
+.stat-card__hint {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.stat-card__bar {
+  height: 4px;
+  margin-top: 8px;
+  overflow: hidden;
+  background: var(--surface-raised);
+  border-radius: 999px;
+}
+
+.stat-card__bar-fill {
+  height: 100%;
+  background: var(--tone);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
