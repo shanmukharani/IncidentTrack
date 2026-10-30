@@ -190,9 +190,8 @@ The frontend communicates with the backend through the Axios configuration in `f
 
 ## Author
 
-**Shanmukha Rani**  
-Computer Science and Systems Engineering  
-Lendi Institute of Engineering & Technology
+**Thodavarapu Shanmukha Rani**  
+
 
 ---
 
